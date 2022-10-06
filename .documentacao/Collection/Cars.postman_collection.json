@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "856265b9-d4f9-4af4-9b04-6cd76a9b480c",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2983862"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/cars/",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get/id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/cars/1",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\": \"admin@material.com\",\r\n    \"password\": \"secret\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/cars/1",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete/id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}api/cars/20",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cars",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Nissan Kicks",
+							"type": "text"
+						},
+						{
+							"key": "sub_title",
+							"value": "1.8 16V FLEX 49 AUTOMATICO",
+							"type": "text"
+						},
+						{
+							"key": "plan",
+							"value": "Plano 24 meses",
+							"type": "text"
+						},
+						{
+							"key": "franchising",
+							"value": "Franquia 1.000 km",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2.999",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "*Nos 3 primeiros meses e R$ 3.599,99 do 4 ao 24 mês",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "kicks.png",
+							"type": "text"
+						},
+						{
+							"key": "km",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "store_withdrawn",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fuel",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "exchange",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "doors",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "air conditioning",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "airbag",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "brake_abs",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "information",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "end plate",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "deadline",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}api/cars",
+					"host": [
+						"{{BASE_URL}}api"
+					],
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Signature",
+			"value": ""
+		},
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080/",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": "1|xc9YUhFcyPFjl0hHufte6syBa2ZFFkYRfjSuvbzW",
+			"type": "string"
+		}
+	]
+}
