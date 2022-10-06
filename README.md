@@ -1,11 +1,11 @@
 
 # Setup Docker Para Projetos Laravel 9 com PHP 8
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+
 
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git laravel9
+git clone https://github.com/Elizeu-Medeiros/teste-mov-back-elizeu.git laravel9
 ```
 
 ```sh
@@ -35,7 +35,7 @@ cp .env.example .env
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
 APP_NAME=EspecializaTi
-APP_URL=http://localhost:8180
+APP_URL=http://localhost:8080
 
 DB_CONNECTION=mysql
 DB_HOST=mysql
