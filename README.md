@@ -1,46 +1,35 @@
+# ZEROKM - MOVIDA
 
-# Setup Docker Para Projetos Laravel 9 com PHP 8
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+
+## Setup Docker Backend Laravel 9 com PHP 8  
+
+*Docker version: "3.7"
 
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git laravel9
+git https://github.com/Elizeu-Medeiros/teste-mov-back-elizeu.git teste-mov-back-elizeu
 ```
 
 ```sh
-cd laravel9/
+cd teste-mov-back-elizeu/
 ```
-
-
-Alterne para a branch laravel 8.x
-```sh
-git checkout laravel-9-com-php-8
-```
-
-
-Remova o versionamento
-```sh
-rm -rf .git/
-```
-
 
 Crie o Arquivo .env
 ```sh
-cd example-project/
 cp .env.example .env
 ```
 
 
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
-APP_NAME=EspecializaTi
-APP_URL=http://localhost:8180
+APP_NAME=ZeroKm
+APP_URL=http://localhost:8080
 
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
-DB_DATABASE=nome_que_desejar_db
+DB_DATABASE=zerokm
 DB_USERNAME=root
 DB_PASSWORD=root
 
@@ -79,4 +68,14 @@ php artisan key:generate
 
 
 Acesse o projeto
-[http://localhost:8180](http://localhost:8180)
+[http://localhost:8180](http://localhost:8080)
+
+
+## **Configurar Postman**
+
+No Environment -> Global atribua a variável TOKEN a key gerada pelo login e crie na BASE_URL o link conforme exemplo abaixo:
+
+TOKEN -> 1|ipRV4U0DybvdtFFrUAY2lJHLRvIyKfTtPLTzfYUW (exemplo)
+BASE_URL -> http://localhost:8080/ 
+
+###Todas as collection necessárias para testar a API encontram-se na pasta .documentacao/Collections
