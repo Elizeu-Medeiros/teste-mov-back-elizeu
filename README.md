@@ -67,8 +67,33 @@ php artisan key:generate
 ```
 
 
+Gerar banco de dados
+```sh
+php artisan migrate
+```
+
+Gerar Vários usuários (senha: secret)
+```sh
+php artisan db:seed --class=UsersSeeder 
+```
+
+Gerar um usuário (usuário: elizeumedeiros@gmail.com senha: secret)
+```sh
+php artisan db:seed --class=UsersTableSeeder
+```
+
+Gerar marcas dos carros
+```sh
+php artisan db:seed --class=BrandSeeder
+```
+
+Gerar carros
+```sh
+php artisan db:seed --class=CarsSeeder
+```
+
 Acesse o projeto
-[http://localhost:8180](http://localhost:8080)
+[http://localhost:8080](http://localhost:8080)
 
 
 ## **Configurar Postman**
@@ -76,6 +101,7 @@ Acesse o projeto
 No Environment -> Global atribua a variável TOKEN a key gerada pelo login e crie na BASE_URL o link conforme exemplo abaixo:
 
 TOKEN -> 1|ipRV4U0DybvdtFFrUAY2lJHLRvIyKfTtPLTzfYUW (exemplo)
+
 BASE_URL -> http://localhost:8080/ 
 
 ###Todas as collection necessárias para testar a API encontram-se na pasta .documentacao/Collections
