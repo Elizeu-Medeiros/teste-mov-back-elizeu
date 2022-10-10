@@ -8,7 +8,7 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/Elizeu-Medeiros/teste-mov-back-elizeu.git teste-mov-back-elizeu
+git clone https://github.com/Elizeu-Medeiros/teste-mov-back-elizeu.git
 ```
 
 ```sh
